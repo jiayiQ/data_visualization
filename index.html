@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024 UK Election - Projected Vote Shares</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #023047;
+        }
+        label {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+        .dash-dropdown {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+        .dash-graph {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>2024 UK Election - Projected Vote Shares</h1>
+    <label for="region-dropdown">Select Region:</label>
+    <select id="region-dropdown" class="dash-dropdown">
+        <!-- Options can be dynamically generated if needed -->
+        <option value="region1">Region 1</option>
+        <option value="region2">Region 2</option>
+    </select>
+    <label for="const-dropdown" style="margin-top: 10px;">Select Constituency:</label>
+    <select id="const-dropdown" class="dash-dropdown" multiple>
+        <!-- Options can be dynamically generated if needed -->
+        <option value="const1">Constituency 1</option>
+        <option value="const2">Constituency 2</option>
+    </select>
+    <div id="plotly-graph" class="dash-graph">
+        <!-- The Plotly graph will be embedded here -->
+        <iframe src="plot.html" width="100%" height="600px" style="border:none;"></iframe>
+    </div>
+</body>
+</html>
+
